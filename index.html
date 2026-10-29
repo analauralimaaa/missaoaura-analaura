@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Aura — Arquivo de Exploradoras</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sketch.js" defer></script>
+</head>
+<body>
+    <div class="page-shell">
+        <nav class="topbar">
+            <a class="brand" href="#">A<span>U</span>RA<span class="brand-dot">.</span></a>
+            <span class="top-label">ARQUIVO DE EXPLORADORAS</span>
+            <span class="status"><i></i> SISTEMA ATIVO</span>
+        </nav>
+
+        <main>
+            <section class="hero">
+                <div class="hero-copy">
+                    <p class="eyebrow">RELATÓRIO DE RECRUTAMENTO <span>ANO 2089</span></p>
+                    <h1>O universo<br>precisa de <em>você.</em></h1>
+                    <p class="hero-description">
+                        Cada mente explora o desconhecido de um jeito.
+                        Descubra qual é o seu papel na próxima expedição.
+                    </p>
+                    <a href="#avaliacao" class="start-link">
+                        INICIAR ANÁLISE <span>↘</span>
+                    </a>
+                </div>
+
+                <div class="hero-art">
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+                    <div class="planet"></div>
+                    <div class="crosshair">+</div>
+                    <div class="art-caption">
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-heading" id="avaliacao">
+                <div>
+                    <p class="eyebrow">PROTOCOLO DE IDENTIFICAÇÃO</p>
+                    <h2>Seu perfil de missão<span>.</span></h2>
+                </div>
+            </div>
+
+            <form id="formulario">
+                <section class="identity-panel">
+                    <div class="panel-index">00</div>
+                    <div class="identity-content">
+                        <label for="nome">COMO DEVEMOS CHAMAR VOCÊ?</label>
+                        <input id="nome" type="text"
+                               placeholder="Seu nome de exploradora"
+                               maxlength="70" required>
+                    </div>
+                    <div class="identity-content">
+                        <label for="nascimento">DATA DE NASCIMENTO</label>
+                        <input id="nascimento" type="date" required>
+                    </div>
+                </section>
+
+                <div class="question-grid">
+                    <fieldset class="question-card">
+                        <legend><span>01</span> O que mais desperta sua curiosidade?</legend>
+                        <label class="option">
+                            <input type="radio" name="p1" value="vida" required>
+                            <span class="option-number">A</span>
+                            <span>Formas de vida desconhecidas</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="p1" value="descoberta">
+                            <span class="option-number">B</span>
+                            <span>Mapas e sinais misteriosos</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="p1" value="conexao">
+                            <span class="option-number">C</span>
+                            <span>Outras culturas e civilizações</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="p1" value="tecnologia">
+                            <span class="option-number">D</span>
+                            <span>Tecnologias impossíveis</span>
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="question-card">
+                        <legend><span>02</span> A equipe encontrou algo inexplicável. Você...</legend>
+                        <label class="option">
+                            <input type="radio" name="p2" value="vida" required>
+                            <span class="option-number">A</span>
+                            <span>Verifica se existe vida por perto</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="p2" value="descoberta">
+                            <span class="option-number">B</span>
+                            <span>Investiga pistas e padrões</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="p2" value="conexao">
+                            <span class="option-number">C</span>
+                            <span>Tenta estabelecer contato</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="p2" value="tecnologia">
+                            <span class="option-number">D</span>
+                            <span>Analisa como o objeto funciona</span>
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="question-card">
+                        <legend><span>03</span> Escolha um instrumento para levar.</legend>
+                        <label class="option">
+                            <input type="radio" name="p3" value="vida" required>
+                            <span class="option-number">A</span>
+                            <span>Scanner biológico</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="p3" value="descoberta">
+                            <span class="option-number">B</span>
+                            <span>Mapa estelar holográfico</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="p3" value="conexao">
+                            <span class="option-number">C</span>
+                            <span>Tradutor universal</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="p3" value="tecnologia">
+                            <span class="option-number">D</span>
+                            <span>Kit de engenharia quântica</span>
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="question-card">
+                        <legend><span>04</span> Qual frase representa você?</legend>
+                        <label class="option">
+                            <input type="radio" name="p4" value="vida" required>
+                            <span class="option-number">A</span>
+                            <span>Toda vida merece ser protegida.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="p4" value="descoberta">
+                            <span class="option-number">B</span>
+                            <span>Existe sempre algo a descobrir.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="p4" value="conexao">
+                            <span class="option-number">C</span>
+                            <span>Diferenças podem nos aproximar.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="p4" value="tecnologia">
+                            <span class="option-number">D</span>
+                            <span>O impossível é um projeto inacabado.</span>
+                        </label>
+                    </fieldset>
+                </div>
+
+                <div class="submit-row">
+                    <p>04 RESPOSTAS NECESSÁRIAS<br><span>SEUS DADOS FICAM NESTA SESSÃO.</span></p>
+                    <button type="submit">REVELAR MEU PERFIL <span>↗</span></button>
+                </div>
+            </form>
+
+            <section id="resultado" class="result-panel" hidden aria-live="polite">
+                <div class="result-topline">
+                    <span>ARQUIVO CLASSIFICADO / AURA-067</span>
+                    <span>PERFIL IDENTIFICADO ✓</span>
+                </div>
+
+                <div class="result-layout">
+                    <div class="result-image-wrap">
+                        <img id="imagemPerfil" src="" alt="Ilustração do Perfil">
+                        <span class="image-tag">IDENTIDADE DA MISSÃO</span>
+                    </div>
+
+                    <div class="result-copy">
+                        <p class="eyebrow" id="codigoPerfil">PERFIL 01</p>
+                        <p class="result-greeting" id="saudacao"></p>
+                        <h2 id="nomePerfil"></h2>
+                        <p class="category-label" id="categoria"></p>
+                        <p id="descricao" class="result-description"></p>
+
+                        <div class="recommendation">
+                            <span>ATRIBUIÇÃO NA EXPEDIÇÃO</span>
+                            <p id="recomendacao"></p>
+                        </div>
+
+                        <button type="button" id="refazer" class="secondary-button">
+                            ↶ &nbsp; Refazer
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <span>By Ana Laura</span>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
